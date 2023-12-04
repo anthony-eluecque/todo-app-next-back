@@ -1,0 +1,23 @@
+{
+  "name": "todo-app-next-back",
+  "version": "0.0.1",
+  "description": "Todo App",
+  "main": "server.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\""
+  },
+  "author": "Anthony ELUECQUE | Tom BUATHIER",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "concurrently": "^8.0.1",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.0.3"
+  }
+}
