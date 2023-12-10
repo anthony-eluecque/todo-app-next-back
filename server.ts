@@ -4,7 +4,6 @@ import useRouter from './src/routes/index'
 import dotenv from 'dotenv';
 
 const app = express();
-const port = 5000;
 
 // Application setup
 dotenv.config();
@@ -20,8 +19,8 @@ app.get("/", (req, res) => {
 initDatabaseConnection();
 
 const startServer = async () => {
-    app.listen(port, () => {
-        console.log(`Listening on port ${port}...`);
+    app.listen(process.env.PORT, () => {
+        console.log(`Listening on port ${process.env.PORT}...`);
     });
     app.use(useRouter);
   }
