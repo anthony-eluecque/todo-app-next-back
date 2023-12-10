@@ -26,3 +26,21 @@ export const getTodos = async (req: Request, res: Response) => {
         throw error;
     }
 }
+
+export const updateTodo = async (req: Request, res: Response) => {
+    try {
+        const { id, title, content, completed } = req.body;
+        const updateSet = {
+            title: req.body.title,
+            content: req.body.content,
+            completed: req.body.completed
+        }
+        await Todo.findByIdAndUpdate(id, {$set: updateSet }, {new: true});
+        res.statusMessage = 'Todo updated successfully';
+        res.status(204).json({});
+    } catch (error) {
+        res.status(500).json(error);
+        throw error;
+    }
+
+}
