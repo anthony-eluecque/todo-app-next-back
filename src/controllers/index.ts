@@ -1,1 +1,1 @@
-export { createTodo, getTodos, updateTodo } from './todo.controller';
+export { createTodo, getTodos, updateTodo, deleteTodoById } from './todo.controller';
