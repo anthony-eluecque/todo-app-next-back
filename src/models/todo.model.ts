@@ -1,6 +1,6 @@
 import Mongoose from "mongoose";
 
-export interface TodoModel extends Mongoose.Document {
+export interface TodoModel {
     title : string
     content : string
     completed : boolean
