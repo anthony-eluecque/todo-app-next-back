@@ -13,7 +13,8 @@
     "watch-ts": "tsc -w",
     "clean": "rimraf ./dist",
     "test": "jest --setupFiles dotenv/config --forceExit --detectOpenHandles --coverage --verbose",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\""
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\"",
+    "prepare": "husky install"
   },
   "author": "Anthony ELUECQUE | Tom BUATHIER",
   "license": "ISC",
@@ -39,17 +40,5 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "eslint -- fix",
-      "prettier -- write",
-      "git add"
-    ]
   }
 }
