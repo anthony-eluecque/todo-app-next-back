@@ -14,7 +14,9 @@
     "clean": "rimraf ./dist",
     "test": "jest --setupFiles dotenv/config --forceExit --detectOpenHandles --coverage --verbose",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
   },
   "author": "Anthony ELUECQUE | Tom BUATHIER",
   "license": "ISC",
@@ -29,6 +31,8 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.15.11",
     "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
     "concurrently": "^8.0.1",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
@@ -40,5 +44,10 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
