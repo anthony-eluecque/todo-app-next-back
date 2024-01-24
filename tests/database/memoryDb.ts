@@ -32,7 +32,6 @@ export class MemoryDatabase {
             await this.mongoServer?.stop();  
         } catch (error) {
             console.error(error)   
-            throw error;
         }
     };
 
@@ -45,7 +44,6 @@ export class MemoryDatabase {
             }
         } catch (error) {
             console.error(error)
-            throw error;
         }
     };
 }
