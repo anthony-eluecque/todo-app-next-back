@@ -1,4 +1,4 @@
-import Mongoose, { MongooseError } from "mongoose";
+import Mongoose from "mongoose";
 import { db } from "../config";
 
 let dbURI;

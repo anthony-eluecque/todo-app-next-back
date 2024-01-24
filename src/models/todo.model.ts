@@ -4,7 +4,7 @@ export interface TodoModel {
     title : string
     content : string
     completed : boolean
-};
+}
 
 const TodoSchema = new Mongoose.Schema({
     title : {

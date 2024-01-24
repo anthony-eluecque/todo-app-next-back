@@ -29,7 +29,7 @@ export const getTodos = async (req: Request, res: Response) => {
 
 export const updateTodo = async (req: Request, res: Response) => {
     try {
-        const { id, title, content, completed } = req.body;
+        const { id } = req.body;
         const updateSet = {
             title: req.body.title,
             content: req.body.content,
