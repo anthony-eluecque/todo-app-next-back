@@ -22,7 +22,6 @@ export class MemoryDatabase {
             await Mongoose.connect(mongoUri, opts);
         } catch (error) {
             console.error(error);
-            throw error;
         }
     }
 
