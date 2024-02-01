@@ -1,0 +1,13 @@
+{
+    "todo": {
+        "created" : "Succesfully post one todo",
+        "getTodos" : "Got All Todos",
+        "updateTodo" : "Todo updated successfully",
+        "deleteTodoById" : "Todo deleted successfully"
+    },
+
+    "defaults" : {
+        "badRequest": "Bad Request",
+        "serverError": "Internal Server Error"
+    }
+}
