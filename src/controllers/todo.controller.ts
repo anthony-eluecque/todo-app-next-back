@@ -1,46 +1,54 @@
 import {Request, Response} from 'express'
 import Todo from '../models/todo.model'
+import { Res } from '../helpers';
+import { validationResult } from "express-validator";
 
 export const createTodo = async (req: Request, res: Response) => {
     try {
         const { title, content, completed } = req.body;
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            return Res.send(res, 400, 'Bad Request', errors);
+        }
         const todo = new Todo({
             title,
             content,
             completed
         });
         const newTodo = await todo.save();
-        res.status(200).json(newTodo);
+        Res.send(res,200,'Succesfully post one todo',newTodo);
     } catch (error) {
-        res.status(500).json(error);
-        throw error;
+        Res.send(res,500,'Internal Server Error',error);
     }
 }
 
 export const getTodos = async (req: Request, res: Response) => {
     try {
         const todos = await Todo.find();
-        res.status(200).json(todos);
+        Res.send(res,200,'Got All Todos',todos);
     } catch (error) {
-        res.status(500).json(error);
-        throw error;
+        Res.send(res,500,'Internal Server Error',error);
     }
 }
 
 export const updateTodo = async (req: Request, res: Response) => {
     try {
-        const { id, title, content, completed } = req.body;
+        const { id } = req.body;
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            return Res.send(res, 400, 'Bad Request', errors);
+        }
         const updateSet = {
             title: req.body.title,
             content: req.body.content,
             completed: req.body.completed
         }
         await Todo.findByIdAndUpdate(id, {$set: updateSet }, {new: true});
-        res.statusMessage = 'Todo updated successfully';
-        res.status(204).json({});
+        Res.send(res,204,'Todo updated successfully')
     } catch (error) {
-        res.status(500).json(error);
-        throw error;
+        Res.send(res,500,'Internal Server Error',error);
     }
 }
 
@@ -48,8 +56,8 @@ export const deleteTodoById = async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
         await Todo.findByIdAndDelete(id);
-        res.status(204).json({});
+        Res.send(res,204,'Todo deleted successfully');
     } catch (error) {
-        res.status(500).json(error)   
+        Res.send(res,500,'Internal Server Error',error);
     }
 }
