@@ -1,11 +1,16 @@
 import {Request, Response} from 'express'
 import Todo from '../models/todo.model'
 import { Res } from '../helpers';
-
+import { validationResult } from "express-validator";
 
 export const createTodo = async (req: Request, res: Response) => {
     try {
         const { title, content, completed } = req.body;
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            return Res.send(res, 400, 'Bad Request', errors);
+        }
         const todo = new Todo({
             title,
             content,
@@ -29,7 +34,12 @@ export const getTodos = async (req: Request, res: Response) => {
 
 export const updateTodo = async (req: Request, res: Response) => {
     try {
-        const { id, title, content, completed } = req.body;
+        const { id } = req.body;
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            return Res.send(res, 400, 'Bad Request', errors);
+        }
         const updateSet = {
             title: req.body.title,
             content: req.body.content,
