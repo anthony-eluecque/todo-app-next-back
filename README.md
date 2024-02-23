@@ -1,6 +1,16 @@
 # todo-app-next-back
 
-Todo App 
+Nous avons développé une API conçue pour permettre la création et la gestion d'une application Todo. Cette API est conçue pour être évolutive, offrant la flexibilité nécessaire pour s'adapter à des fonctionnalités supplémentaires à mesure que le projet se développe. Actuellement, l'API intègre tous les éléments nécessaires pour réaliser une Todo-app basique côté front, offrant des fonctionnalités telles que la création, la lecture, la mise à jour et la suppression de tâches.
+
+Nous avons accordé une attention particulière à ce que notre projet respecte un maximum de bonnes pratiques et de conventions, non seulement pour garantir la qualité du code, mais aussi pour nous permettre d'élargir nos compétences et de perfectionner notre savoir-faire en développement web.
+
+
+# Installation
+
+```cmd
+npm i
+npm run watch
+```
 
 ## Authors
 
