@@ -138,6 +138,7 @@ L'intégration du wiki GitHub dans notre projet nous a offert une plateforme eff
 
 ### Documentation Technique
 
+Dans le cadre du BUT j'ai découvert l'importance de la documentation technique dans le développement d'une application. C'est pourquoi nous avons décidé de mettre en place une documentation technique pour notre API et qui est accessible dans le controlleur de notre API. La documentation est simple mais elle est suffisante pour comprendre comment utiliser notre API.
 
 ## Conclusion
 
