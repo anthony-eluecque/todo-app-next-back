@@ -4,6 +4,15 @@ import { Res } from '../helpers';
 import { validationResult } from "express-validator";
 import messages from "../docs/messages.json";
 
+/**
+ * Create new task
+ * 
+ * @funcion createTodo
+ * @param {Request} req - Request object
+ * @param {Response} res - Response object
+ * @returns {Promise<Response>} - Response object
+ * @throws {Error} - Error due to the request
+ */
 export const createTodo = async (req: Request, res: Response) => {
     try {
         const { title, content, completed } = req.body;
@@ -24,6 +33,15 @@ export const createTodo = async (req: Request, res: Response) => {
     }
 }
 
+/**
+ * Get all tasks
+ * 
+ * @funcion getTodos
+ * @param {Request} req - Request object
+ * @param {Response} res - Response object
+ * @returns {Promise<Response>} - Response object
+ * @throws {Error} - Error due to the request
+ */
 export const getTodos = async (req: Request, res: Response) => {
     try {
         const todos = await Todo.find();
@@ -33,6 +51,15 @@ export const getTodos = async (req: Request, res: Response) => {
     }
 }
 
+/**
+ * Update task by id
+ * 
+ * @funcion updateTodo
+ * @param {Request} req - Request object
+ * @param {Response} res - Response object
+ * @returns {Promise<Response>} - Response object
+ * @throws {Error} - Error due to the request
+ */
 export const updateTodo = async (req: Request, res: Response) => {
     try {
         const { id } = req.body;
@@ -53,6 +80,15 @@ export const updateTodo = async (req: Request, res: Response) => {
     }
 }
 
+/**
+ * Delete task by id
+ * 
+ * @funcion deleteTodoById
+ * @param {Request} req - Request object
+ * @param {Response} res - Response object
+ * @returns {Promise<Response>} - Response object
+ * @throws {Error} - Error due to the request
+ */
 export const deleteTodoById = async (req: Request, res: Response) => {
     try {
         const { id } = req.params;
