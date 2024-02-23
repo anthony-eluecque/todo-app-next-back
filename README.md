@@ -128,4 +128,6 @@ L'idée derrière cette décision, c'était de pouvoir mettre en pratique les co
 
 ## Conclusion
 
-Résumé et conclusion du document.
+En conclusion, ce projet nous a offert une opportunité précieuse d'explorer et d'appliquer de nombreux concepts et de bonnes pratiques de développement. De la gestion des commits à la CI/CD, chaque étape nous a semblé importante et nous avons appris des connaissances qui sont de vraies must have
+
+Ce projet a été une expérience enrichissante qui nous a permis de développer nos compétences techniques, d'explorer de nouvelles pratiques, et surtout, de renforcer notre passion pour le développement web.
