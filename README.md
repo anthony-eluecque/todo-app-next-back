@@ -99,7 +99,25 @@ Cette expérience nous a apporté une vrai valeur ajotué sur les bonnes pratiqu
 
 ## CI/CD
 
+La mise en place d'un système de CI/CD a été le concept le plus difficile à aborder. La complexité de cette tâche résidait dans la nécessité de comprendre et de définir précisement ce que l'on souhaitait dès le départ.
+
+Initialement, nous avons sous-estimé la complexité de la CI/CD et nous avons été confrontés à des défis significatifs lors de la recherche et la sélection d'une solution adapté à nos besoins.
+
+Lors d'un cours, vous nous avez parlé de dagger.io, l'intégration bien que prometteuse au départ, s'est rélevé problématique avec des soucis de compatibilité avec nos ordinateurs et de la conception radicalement différente par rapport à nos connaissances actuelles
+
+Cependant, nous pensons que nous reviendrons sur ça dans les prochaines années de nos études, et que ce n'est que partie remise.
+
+En dépit des difficultés, nous avons persévéré dans notre démarche et nous avons finalement réussi à mettre en place un système de CI/CD fonctionnel avec les GitHub Actions, ainsi qu'avec l'intégration Docker pour la conteuneurisation de notre API.
+
+Cette expérience nous a permis de mieux comprendre l'importance de la CI/CD dans le développement et de renforcer nos acquis dans ce domaine.
+
+
+
 ## Makefile
+
+Nous avons décidé d'implémenter un fichier Makefile, une pratique que nous avons abordée lors du premier cours de déploiement.
+
+L'idée derrière cette décision, c'était de pouvoir mettre en pratique les concepts que nous avions appris dans le cours et d'autre part, nous voulions assurer la compabilité multiplateforme.
 
 ## Documentation
 
