@@ -109,6 +109,8 @@ Cette expérience nous a apporté une vrai valeur ajotué sur les bonnes pratiqu
 
 Nous avons également exploré la conteneurisation de notre API avec Docker, une pratique que nous avons abordée lors du cours de déploiement. Malgrès ça, nous avons essayer de mettre en place un conteneur Docker pour notre API, mais nous avons des difficultés sur la conteneurisation, notre pc fais tourner l'installation des packages pendant 3000s et plus.
 
+![Docker](https://cdn.discordapp.com/attachments/1065280182635737150/1210508743318704138/image.png?ex=65ead11e&is=65d85c1e&hm=49e11a65a745084ec773f54239bddacd9eedd57b7cc92e5344b8fb8832f29194&)
+
 ## CI/CD
 
 La mise en place d'un système de CI/CD a été le concept le plus difficile à aborder. La complexité de cette tâche résidait dans la nécessité de comprendre et de définir précisement ce que l'on souhaitait dès le départ.
