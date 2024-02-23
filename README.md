@@ -112,7 +112,6 @@ En dépit des difficultés, nous avons persévéré dans notre démarche et nous
 Cette expérience nous a permis de mieux comprendre l'importance de la CI/CD dans le développement et de renforcer nos acquis dans ce domaine.
 
 
-
 ## Makefile
 
 Nous avons décidé d'implémenter un fichier Makefile, une pratique que nous avons abordée lors du premier cours de déploiement.
@@ -122,6 +121,10 @@ L'idée derrière cette décision, c'était de pouvoir mettre en pratique les co
 ## Documentation
 
 ### Wiki Github
+
+Dans le cadre de notre projet, nous avons également exploré l'utilisation du wiki GitHub comme une ressource précieuse pour la documentation et le partage de connaissances. Nous avons fait la découverte de l'existant des wiki GitHub lorsque nous avons remarqué l'existence d'un wiki GitHub sur le projet Visual Studio Code de Microsoft, hébergé sur GitHub Nous avons décidé de l'intégré pour notre propre projet.
+
+L'intégration du wiki GitHub dans notre projet nous a offert une plateforme efficace pour organiser et partager les connaissances, ce qui a contribué à améliorer la transparence, la collaboration et la qualité globale de notre travail. Cette découverte précoce a renforcé notre appréciation pour les outils de collaboration offerts par GitHub et nous a encouragés à les exploiter pleinement dans nos projets futurs.
 
 ### Documentation Technique
 
