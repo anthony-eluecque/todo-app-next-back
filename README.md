@@ -107,6 +107,8 @@ Cette expérience nous a apporté une vrai valeur ajotué sur les bonnes pratiqu
 
 ## Container Docker
 
+Nous avons également exploré la conteneurisation de notre API avec Docker, une pratique que nous avons abordée lors du cours de déploiement. Malgrès ça, nous avons essayer de mettre en place un conteneur Docker pour notre API, mais nous avons des difficultés sur la conteneurisation, notre pc fais tourner l'installation des packages pendant 3000s et plus.
+
 ## CI/CD
 
 La mise en place d'un système de CI/CD a été le concept le plus difficile à aborder. La complexité de cette tâche résidait dans la nécessité de comprendre et de définir précisement ce que l'on souhaitait dès le départ.
